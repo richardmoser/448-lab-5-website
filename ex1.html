@@ -1,0 +1,64 @@
+<!--password validation page-->
+
+<html>
+<head>
+    <title> Verification of valid Password </title>
+</head>
+<script>
+    function checkPassword() {
+        var password = document.getElementById("pswd").value;
+        var password2 = document.getElementById("pswd2").value;
+        if(password.length < 8) {
+            document.getElementById("message").innerHTML = "**Password length must be at least 8 characters";
+            return false;
+        }
+        if (password == password2) {
+            alert("Passwords match");
+            return true;
+        } else {
+            alert("Passwords do not match");
+            return false;
+        }
+    }
+</script>
+
+<body>
+    <h3> Verify valid password </h3>
+
+    <form onsubmit ="return checkPassword()">
+        <!-- Enter Password -->
+        <td> Enter First Password </td>
+        <input type = "text" id = "pswd" value = "">
+        <span id = "message" style="color:red"> </span> <br><br>
+
+        <!-- Enter Password -->
+        <td> Enter Second Password </td>
+        <input type = "text" id = "pswd2" value = "">
+        <span id = "message" style="color:red"> </span> <br><br>
+
+        <!-- Click to verify valid password -->
+        <input type = "submit" value = "Validate">
+
+        <!-- Click to reset fields -->
+        <button type = "reset" value = "Reset" >Reset</button>
+    </form>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <script type="text/javascript" src="pass_validation.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="ex1.html" method="post">-->
+<!--        <label for="password">Password:</label>-->
+<!--        <input type="password" name="password" id="password">-->
+<!--&lt;!&ndash;        <input type="submit" value="Submit">&ndash;&gt;-->
+<!--        <button onclick="pass_getter()">Submit</button>-->
+<!--    </form>-->
+<!--    <button onclick="pass_validator()">Validate Your Passwords</button>-->
+<!--</body>-->
+<!--</html>-->
