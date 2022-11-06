@@ -1,10 +1,10 @@
 body
 {
     text-decoration-color: cornflowerblue;
-    background-image: url(img_flwr.gif); background-size: 100%;
+    background-image: url(images/background.jpeg); background-size: 100%;
     background-repeat: no-repeat;
 }
-}
+
 h1
 {
     color: cornflowerblue;

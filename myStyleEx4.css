@@ -1,0 +1,50 @@
+body
+{
+    text-decoration-color: cornflowerblue;
+    background-color: salmon;
+    background-image: url(images/background.jpeg); background-size: 100%;
+    background-repeat: no-repeat;
+    width: 900px; /* whatever width you want */
+
+}
+
+h1
+{
+    color: white;
+    background-color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif,;
+    font-size: 32pt;
+}
+
+p
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: teal;
+    color: black;
+    font-size: 12pt;
+
+}
+
+p.other
+{
+    color: orange;
+    background-color: black;
+    width: 300px; /* whatever width you want */
+    text-align:center;
+
+
+}
+p.links
+{
+    color: white;
+    background-color: teal;
+    width: 200px; /* whatever width you want */
+
+}
+
+p.links:hover
+{
+    color: white;
+    background-color: ghostwhite;
+
+}
