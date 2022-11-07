@@ -1,73 +1,37 @@
-<!--&lt;!&ndash; makes a paragraph with dummy text&ndash;&gt;-->
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <title>Exercise 1</title>-->
-<!--    <link href="myStyleEx4.css"-->
-<!--          rel="stylesheet"-->
-<!--          type="text/css"/>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h1>Exercise 4</h1>-->
-<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non velit a eros pulvinar interdum. Praesent id-->
-<!--    lobortis elit, vel porttitor dolor. Duis ac nisl ut ipsum volutpat venenatis. Nulla facilisi. Integer luctus, ligula-->
-<!--    vitae euismod malesuada, nisl metus congue purus, et porta turpis nisl quis lorem. Donec vitae lacinia diam. Donec-->
-<!--    pharetra, mi sed tempor tristique, lorem lectus aliquam nisl, vitae aliquet nisl nisl eget nisl. Nulla facilisi.</p>-->
-<!--<body>-->
-<!--<div class="color-picker">-->
-<!--    <div class="picktxt">PICK<br>A<br>COLOR</div>-->
-<!--    <div class="picker">-->
-<!--        <input type="color" id="favcolor" class="inputcolor" value="#243441">-->
-<!--    </div>-->
-<!--    <div class="color-code" id="c-code">#243441</div>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--<input type="color" id="favcolor" class="inputcolor" value="#243441">-->
-<!--<script src="main.js"></script>-->
-
-
-<!--</body>-->
-
-<!--</body>-->
-<!--</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Change the Background Color with JavaScript</title>
-    <script>
-        // Function to change webpage background color
-        function changeBodyBg(color){
-            document.body.style.background = color;
-        }
+    <script type="text/javascript" src="color.js"></script>
+    <link rel="stylesheet" type="text/css" href="myStyleEx4.css">
+    <title> Exercise 4: The Colorizer </title>
+    <h1>Exercise 4: The Colorizer</h1>
 
-        // Function to change heading background color
-        function changeHeadingBg(color){
-            document.getElementById("heading").style.background = color;
-        }
-    </script>
 </head>
+
 <body>
-<h1 id="heading">This is a heading</h1>
-<p>This is a paragraph of text.</p>
-<hr>
-<div>
-    <label>Change Webpage Background To:</label>
-    <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
-    <button type="button" onclick="changeBodyBg('lime');">Lime</button>
-    <button type="button" onclick="changeBodyBg('orange');">Orange</button>
-</div>
-<br>
-<div>
-    <label>Change Heading Background To:</label>
-    <button type="button" onclick="changeHeadingBg('red');">Red</button>
-    <button type="button" onclick="changeHeadingBg('green');">Green</button>
-    <button type="button" onclick="changeHeadingBg('blue');">Blue</button>
+<p id="para">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non velit a eros pulvinar interdum. Praesent id
+    lobortis elit, vel porttitor dolor. Duis ac nisl ut ipsum volutpat venenatis. Nulla facilisi. Integer luctus, ligula
+    vitae euismod malesuada, nisl metus congue purus, et porta turpis nisl quis lorem. Donec vitae lacinia diam. Donec
+    pharetra, mi sed tempor tristique, lorem lectus aliquam nisl, vitae aliquet nisl nisl eget nisl. Nulla facilisi.
+</p>
+<h4>text background color:</h4>
+<input type="text" id="back-red"><label>Red (0-255)</label><br>
+<input type="text" id="back-green"><label>Green (0-255)</label><br>
+<input type="text" id="back-blue"><label>Blue (0-255)</label><br>
 
-    <p><a href="home.html">Return Home</a></p>
 
-</div>
+<h4>text border color:</h4>
+<input type="text" id="bord-red"><label>Red (0-255)</label><br>
+<input type="text" id="bord-green"><label>Green (0-255)</label><br>
+<input type="text" id="bord-blue"><label>Blue (0-255)</label><br>
+
+<h4>text border width:</h4>
+<input type="text" id="bord-width"><label>Width (thin/medium/thick)</label><br><br>
+
+
+
+<button onclick="colorizer()">get funky</button>
+
 </body>
 </html>
