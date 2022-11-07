@@ -1,12 +1,15 @@
-body
-{
+:root{
+    --backcol:#243441;
+}
+body{
+    background-color: var(--backcol);
     text-decoration-color: cornflowerblue;
-    background-color: salmon;
-    background-image: url(images/background.jpeg); background-size: 100%;
+    background-image: url(images/img2.jpeg); background-size: 100%;
     background-repeat: no-repeat;
     width: 900px; /* whatever width you want */
 
 }
+
 
 h1
 {
@@ -47,4 +50,49 @@ p.links:hover
     color: white;
     background-color: ghostwhite;
 
+}
+
+.color-picker{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 25px;
+
+}
+
+.picktext{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.picker{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.inputcolor{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.color-code{
+    width: 100px;
+    padding: 10px;
+    font-family: 'Montserrat' ,sans-serif;
 }
